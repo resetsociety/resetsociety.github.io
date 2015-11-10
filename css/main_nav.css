@@ -1,0 +1,44 @@
+.main_nav {
+  overflow: hidden;
+  padding: 0 2.5rem;
+  height: 10%;
+  min-height: 5rem;
+}
+
+.main_nav__logo {
+  float: left;
+  line-height: 2rem;
+  margin: 2rem 0;
+}
+
+.main_nav__list {
+  float: right;
+  overflow: hidden;
+  list-style: none;
+  margin: 2rem 0;
+}
+
+.main_nav__item {
+  float: left;
+  margin-left: 20px;
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+  .main_nav__logo a,
+  .main_nav__item a {
+    color: #222;
+    text-decoration: none;
+    transition: .3s color;
+  }
+
+  .main_nav__logo a:hover,
+  .main_nav__item a:hover {
+    color:  #4DC6E4;
+  }
+
+
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  .main_nav { height: auto; min-height: inherit; padding: 0 1rem; }
+  .main_nav__logo,
+  .main_nav__list { margin: 1rem 0;}
+}
