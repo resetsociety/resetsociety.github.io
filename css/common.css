@@ -1,11 +1,11 @@
 .intro {
-  background: url(/img/background.png) no-repeat 50% 50%;
+  background: url(/img/background.png) no-repeat 100% 50% ;
   background-size: cover;
   padding: 2rem 0;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 70rem;
   padding:  0 2.5rem;
 }

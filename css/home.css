@@ -32,13 +32,18 @@
   overflow: hidden;
 }
 
-.home__intro__copy {
+.home__intro__copy_wrapper {
   background: rgba(147, 205, 98, 0.89);
-  padding: 2rem 30% 2rem 0;
+  padding: 2rem 0;
   margin:2rem 0;
+}
+
+.home__intro__copy {
   color: white;
   text-shadow: 0 2px 1rem rgba(0, 0, 0, 0.5);
+  padding-right: 35%;
 }
+
 
 .home__intro__tagline {
   color: white;
@@ -73,8 +78,10 @@
   .home__intro__cta { width: 100% }
 }
 
-@media only screen and (min-width: 599px) and (orientation: portrait)  {
-  .home__intro__tagline { font-size: 2rem }
+@media only screen and (max-width: 900px) {
+  .home__intro__copy {
+    padding-right: 0;
+  }
 }
 
 /* Inter sections  */
@@ -86,7 +93,7 @@
 
 .home__section_intro {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1rem;
   padding: 0 2rem;
   margin: -2rem auto 2rem auto;
   max-width: 75rem

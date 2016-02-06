@@ -35,10 +35,3 @@
   .main_nav__item a:hover {
     color:  #4DC6E4;
   }
-
-
-@media only screen and (min-width: 320px) and (orientation: portrait) {
-  .main_nav { height: auto; min-height: inherit; padding: 0 1rem; }
-  .main_nav__logo,
-  .main_nav__list { margin: 1rem 0;}
-}
