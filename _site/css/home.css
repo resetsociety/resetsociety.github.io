@@ -109,26 +109,6 @@
   }
 }
 
-/*  Wrappers  */
-/*=========================================*/
-
-.home__outer__wrapper {
-  min-height: 80%;
-  display: flex;
-  padding: 2rem;
-  justify-content: center;
-}
-
-  .home__outer__wrapper--green {
-    background: #fefdf8;
-    box-shadow:  0 -20px 20px -14px rgba(86,96,32,0.2);
-  }
-
-.home__inner__wrapper {
-  align-self: center;
-}
-
-
 /*  What  */
 /*=========================================*/
 
@@ -147,15 +127,10 @@
   width: 33%;
 }
 
-.home__what__item__copy h3{
-  font-size: 1.6rem;
-}
-
 .home__what__caption {
   display: block;
   margin: 0 auto 2rem auto;
   width: 14rem;
-  /*height: 14rem;*/
   max-width: 100%;
 }
   .home__what__caption img {width: 100%; height: 100%;}
@@ -171,7 +146,7 @@
   .home__what__item {width: 100%}
 }
 
-@media only screen and (min-width: 599px) and (orientation: portrait)  {
+@media only screen and (min-width: 800px) and (orientation: portrait)  {
   .home__what__item {width: 100%}
   .home__what__caption {float: left; margin: 0; max-width: 40% }
   .home__what__item__copy {text-align: left; margin-left: 50%}
@@ -179,29 +154,13 @@
 
 /*  How  */
 /*=========================================*/
-.home__how__wrapper {
-  background: white;
-  margin-top: -67px;
-  padding: 3rem;
-  border: 10px solid #8E8F75;
-  border-top-color: #B3B3A2;
-  border-left-color: #BCBCAD;
-}
-  @media only screen and (max-width: 1280px) and (orientation: landscape),
-        (max-width: 1850px) and  (min-resolution: 2dppx)  and (orientation: landscape),
-        screen and (min-width: 200px) and (orientation: portrait)  {
-      .home__how__wrapper {
-        border: 0;
-        background: none;
-      }
-  }
-
 .home__how {
   display: flex;
   padding: 0;
   list-style: none;
   max-width: 88rem;
   margin: 0 auto;
+  align-items: flex-start;
 }
 
 .home__how__item {
@@ -210,7 +169,7 @@
 }
 
 
-@media only screen and (max-width: 1000px) and (orientation: landscape),
+@media only screen and (max-width: 1200px) and (orientation: landscape),
        (max-width: 1600px) and  (min-resolution: 2dppx) and (orientation: landscape) {
   .home__how { flex-wrap:wrap; }
   .home__how__item {
@@ -219,14 +178,9 @@
 }
 
 .home__how__item img {
-  width: 80%;
+  max-width: 80%;
   display: block;
   margin: 0 auto;
-}
-
-.home__how__qot_copy,
-.home__how__resources_copy {
-  height: 12rem;
 }
 
 .home__how__qot_copy {
@@ -263,65 +217,64 @@
 
 .home__where {
   display: flex;
-  min-height: 90%;
   position: relative;
-  border-top: 5px solid rgba(86,96,32,0.2);
-  border-bottom: 5px solid #A6BEC2;
+  padding-bottom: 5rem;
+  flex-wrap: wrap;
 }
 
-  .home__where:before,
-  .home__where:after{
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 15px;
-    box-shadow: inset 0px 15px 25px -25px rgba(0,0,0,1);
-  }
+.home__where__images {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+}
 
-  .home__where:after {
-    bottom: 0;
-    top:auto;
-    box-shadow: inset 0px -15px 25px -25px rgba(0,0,0,1);
-  }
+.home__where__images a {
+  display: inline-block;
+  min-width: 40%;
+  height: 14rem;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+a.home__where__image_rincon {
+  width: 100%;
+  background-image: url(/img/rincon.jpg);
+  margin-bottom: 2rem;
+}
+
+a.home__where__image_espeto {
+  background-image: url(/img/espeto.jpg);
+  margin-right: 1rem;
+  flex-grow: 1;
+}
+
+a.home__where__image_tesoro {
+  background-image: url(/img/cueva-del-tesoro.jpg);
+  margin-left: 1rem;
+  flex-grow: 1;
+}
 
 .home__where__heading {
-  margin: 0;
-  text-align: left;
+  width: 100%
 }
 
 .home__where__content {
   width: 40%;
   min-height: 60%;
-  padding: 2rem;
+  padding-left: 2rem;
   order:2;
   align-self: center;
 }
 
-.home__where__map__container {
-  order:1;
-  width: 60%;
-  min-height: 60%;
-  background: url(../img/spain.png) 50% 50%;
-  background-size: cover;
-}
 
-
-@media only screen and (max-width: 1000px) and (orientation: landscape),
-            (max-width: 1600px) and  (min-resolution: 2dppx) and (orientation: landscape),
-            (min-width: 200px) and (orientation: portrait) {
-  .home__where { flex-wrap: wrap; }
+@media (max-width: 1000px),
+       (max-width: 1600px) and  (min-resolution: 2dppx){
   .home__where__content,
-  .home__where__map__container {
+  .home__where__images {
     width: 100%;
   }
-  .home__where__heading { text-align: center; }
-  .home__where__content { order:1; }
-  .home__where__map__container {height: 60%; min-height: 25rem; order:2;}
-}
-
-.home__where__copy {
-  font-size: 1.2rem;
+  .home__where__content { order:1; padding-left: 0;}
+  .home__where__images { order:2; }
 }
 
 /*  Why  */
