@@ -745,6 +745,9 @@ a {
   text-shadow: 0 2px 1rem rgba(0, 0, 0, 0.5);
   padding-right: 35%; }
 
+.home__intro__big_copy {
+  font-size: 1.2rem; }
+
 .home__intro__tagline {
   color: white;
   font-size: 2.8rem;
@@ -1095,7 +1098,9 @@ a.home__where__image_tesoro {
   border: 0px;
   box-shadow: 0 0 5px #1B1609;
   text-shadow: 0 0 5px #1B1609;
-  transition: .3s all; }
+  transition: .3s all;
+  text-align: center;
+  text-decoration: none; }
 
 .home__join_us__apply__cta:hover {
   background: #3dbce7;
@@ -1141,3 +1146,11 @@ footer {
 
 .container--padded {
   padding: 2.5rem; }
+
+.article h2 {
+  text-align: left; }
+
+.article__apply {
+  text-align: center;
+  padding: 3rem;
+  font-size: 2rem; }

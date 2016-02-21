@@ -17,6 +17,9 @@
   padding-right: 35%;
 }
 
+.home__intro__big_copy {
+  font-size: 1.2rem;
+}
 
 .home__intro__tagline {
   color: white;
@@ -409,6 +412,8 @@ a.home__where__image_tesoro {
   box-shadow: 0 0 5px $darker_brown;
   text-shadow: 0 0 5px $darker_brown;
   transition: .3s all;
+  text-align: center;
+  text-decoration: none;
 }
   .home__join_us__apply__cta:hover { background: lighten($cta_blue, 5%); box-shadow: 1px 1px 10px darken($darker_brown, 5%); }
 
