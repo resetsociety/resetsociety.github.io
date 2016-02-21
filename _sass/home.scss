@@ -1,30 +1,3 @@
-/*
-
-  Color Theme:
-  -dark blue-
-  #4DC6E4
-  -bright blue-
-  #69D2E7;
-
-  -aquamarina-
-  #A7DBD8;
-
-  -dulled green-
-  #E0E4CC;
-
-  -copy brown-
-  #291A00
-
-  -orange-
-  #F38630;
-
-  -dark orange-
-  #FA6900;
-
-  -green-
-  #82B556
-
-*/
 
 /*   Intro    */
 /*=========================================*/
@@ -40,7 +13,7 @@
 
 .home__intro__copy {
   color: white;
-  text-shadow: 0 2px 1rem rgba(0, 0, 0, 0.5);
+  text-shadow: 0 2px 1rem $shadow_black;
   padding-right: 35%;
 }
 
@@ -49,12 +22,12 @@
   color: white;
   font-size: 2.8rem;
   font-weight: 200;
-  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 1rem $shadow_black;
   line-height: 120%;
 }
 
 .home__intro__cta{
-  background: #26B4E4;
+  background: $cta_blue;
   display: block;
   width: 20rem;
   font-size: 1rem;
@@ -285,12 +258,11 @@ a.home__where__image_tesoro {
               url(../img/ground2.png) repeat-x 0 100%,
               url(../img/backmountains.png) no-repeat 60% 100%,
               url(../img/sun.png) no-repeat 90% 90%,
-              linear-gradient(180deg,#4DC6E4, #4DC6E4, #BDF2FF);
+              linear-gradient(180deg,$dark_blue, $dark_blue, #BDF2FF);
   min-height: 80%;
   display: flex;
   justify-content: center;
   color: white;
-  /*text-shadow: 0 0 0.5rem rgba(54, 146, 175, 0.77),0.1rem 0.1rem 0.1rem rgba(54, 146, 175, 0.55);*/
   text-shadow: 0 0 1.5rem rgba(32, 82, 98, 1),0.1rem 0.1rem 0.1rem rgba(54, 146, 175, 0.55);
 }
 
@@ -337,14 +309,14 @@ a.home__where__image_tesoro {
 /*  Join Us  */
 /*=========================================*/
 .home__join_us__wrapper {
-  border-top: 10px solid #3D3019;
-  background: #5F4A25;
+  border-top: 10px solid $dark_brown;
+  background: $brown;
   min-height: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  text-shadow: 0 0 5px #1B1609;
+  text-shadow: 0 0 5px $darker_brown;
 }
 
 .home__join_us {
@@ -367,7 +339,7 @@ a.home__where__image_tesoro {
 }
 
 .home__newsletter__button {
-  background: #82B556;
+  background: $green;
   padding: 1rem;
   border-radius: 1rem;
   border: 0px;
@@ -379,7 +351,7 @@ a.home__where__image_tesoro {
   display: inline-block;
 }
 
-  .home__newsletter__button:hover { background: #93C667; box-shadow: 1px 1px 10px #0C0508; }
+  .home__newsletter__button:hover { background: lighten($green, 5%); box-shadow: 1px 1px 10px darken($darker_brown, 5%); }
 
 .home__join_us__apply {
   display: flex;
@@ -387,7 +359,7 @@ a.home__where__image_tesoro {
 
 .home__join_us__apply__copy {
   font-size: 1.1rem;
-  text-shadow: 1px 1px 5px #1B1609;
+  text-shadow: 1px 1px 5px $darker_brown;
   width: 50%;
 }
 
@@ -430,15 +402,15 @@ a.home__where__image_tesoro {
   margin: 0 auto;
   display: block;
   color: white;
-  background: #26B4E4;
+  background: $cta_blue;
   padding: 1rem;
   border-radius: 1rem;
   border: 0px;
-  box-shadow: 0 0 5px #1B1609;
-  text-shadow: 0 0 5px #1B1609;
+  box-shadow: 0 0 5px $darker_brown;
+  text-shadow: 0 0 5px $darker_brown;
   transition: .3s all;
 }
-  .home__join_us__apply__cta:hover { background: #57C5EA; box-shadow: 1px 1px 10px #0C0508; }
+  .home__join_us__apply__cta:hover { background: lighten($cta_blue, 5%); box-shadow: 1px 1px 10px darken($darker_brown, 5%); }
 
 @media only screen and (min-width: 200px) and (orientation: portrait)  {
   .home__newsletter { width: 100% }
@@ -460,6 +432,6 @@ a.home__where__image_tesoro {
 /*=========================================*/
 
 footer {
-  background: #1B150A;
+  background: $darker_brown;
   min-height: 20%;
 }

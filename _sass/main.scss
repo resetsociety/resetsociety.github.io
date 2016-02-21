@@ -48,12 +48,12 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: $blue_select_background;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: $blue_select_background;
     text-shadow: none;
 }
 
@@ -121,7 +121,7 @@ h3 {
 }
 
 a {
-    color: #4DC6E4;
+    color: $dark_blue;
 }
 
 /* ==========================================================================

@@ -1,0 +1,33 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+// Color Theme:
+$dark_blue: #4DC6E4;
+$cta_blue: #26B4E4;
+$blue_select_background: #b3d4fc;
+$aquamarina: #A7DBD8; // unused for now, remove if it stays that way
+$dulled_green: #E0E4CC; // unused for now, remove if it stays that way
+$copy_brown: #291A00; // unused for now, remove if it stays that way
+$orange: #F38630; // unused for now, remove if it stays that way
+$dark_orange: #FA6900; // unused for now, remove if it stays that way
+$green: #82B556;
+$brown: #5F4A25;
+$dark_brown: #3D3019;
+$darker_brown: #1B1609;
+$shadow_black: rgba(0, 0, 0, 0.5);
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+  "normalize",
+  "common",
+
+  "main",
+  "main_nav",
+  "icons",
+  "home",
+  "common"
+;
