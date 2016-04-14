@@ -6,9 +6,10 @@
 }
 
 .home__intro__copy_wrapper {
-  background: rgba(147, 205, 98, 0.89);
-  padding: 2rem 0;
-  margin:2rem 0;
+  padding: 0;
+  margin:4rem 0 12rem 0;
+  position: relative;
+  z-index: 1;
 }
 
 .home__intro__copy {
@@ -32,22 +33,27 @@
 .home__intro__cta{
   background: $cta_blue;
   display: block;
+  float: right;
   width: 20rem;
   font-size: 1rem;
-  float: left;
   color: white;
   border-radius: 10px;
   text-decoration: none;
   padding: 0.6rem 1.25rem;
-  margin: 2rem 0;
+  margin: 1rem 0;
   transition: all .15s;
   text-align: center;
-  float: right;
 }
 
   .home__intro__cta:hover {
     background: #57C5EA;
   }
+
+.home__intro__seashore {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
 
 @media only screen and (min-width: 200px) and (orientation: portrait)  {
   .home__intro__tagline { font-size: 2rem }

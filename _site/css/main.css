@@ -449,9 +449,19 @@ table {
   border-spacing: 0; }
 
 .intro {
-  background: url(/img/background.png) no-repeat 100% 25%;
-  background-size: cover;
-  padding: 2rem 0; }
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#258dc8+0,258dc8+100;Blue+Flat+%231 */
+  background: #258dc8;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #258dc8 0%, #258dc8 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #258dc8 0%, #258dc8 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #258dc8 0%, #258dc8 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#258dc8', endColorstr='#258dc8',GradientType=0 );
+  /* IE6-9 */
+  padding: 2rem 0;
+  position: relative; }
 
 .container {
   margin: 0 auto;
@@ -665,6 +675,8 @@ a {
   margin-left: 20px;
   font-size: 1.1rem;
   line-height: 2rem; }
+  .main_nav__item.selected {
+    border-bottom: 2px solid white; }
 
 .main_nav__logo a,
 .main_nav__item a {
@@ -736,9 +748,10 @@ a {
   overflow: hidden; }
 
 .home__intro__copy_wrapper {
-  background: rgba(147, 205, 98, 0.89);
-  padding: 2rem 0;
-  margin: 2rem 0; }
+  padding: 0;
+  margin: 4rem 0 12rem 0;
+  position: relative;
+  z-index: 1; }
 
 .home__intro__copy {
   color: white;
@@ -758,20 +771,24 @@ a {
 .home__intro__cta {
   background: #26B4E4;
   display: block;
+  float: right;
   width: 20rem;
   font-size: 1rem;
-  float: left;
   color: white;
   border-radius: 10px;
   text-decoration: none;
   padding: 0.6rem 1.25rem;
-  margin: 2rem 0;
+  margin: 1rem 0;
   transition: all .15s;
-  text-align: center;
-  float: right; }
+  text-align: center; }
 
 .home__intro__cta:hover {
   background: #57C5EA; }
+
+.home__intro__seashore {
+  position: absolute;
+  right: 0;
+  bottom: 0; }
 
 @media only screen and (min-width: 200px) and (orientation: portrait) {
   .home__intro__tagline {
@@ -1132,9 +1149,19 @@ footer {
   min-height: 20%; }
 
 .intro {
-  background: url(/img/background.png) no-repeat 100% 25%;
-  background-size: cover;
-  padding: 2rem 0; }
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#258dc8+0,258dc8+100;Blue+Flat+%231 */
+  background: #258dc8;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #258dc8 0%, #258dc8 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #258dc8 0%, #258dc8 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #258dc8 0%, #258dc8 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#258dc8', endColorstr='#258dc8',GradientType=0 );
+  /* IE6-9 */
+  padding: 2rem 0;
+  position: relative; }
 
 .container {
   margin: 0 auto;
