@@ -20,6 +20,7 @@
 
 .home__intro__big_copy {
   font-size: 1.2rem;
+  font-weight: 300;
 }
 
 .home__intro__tagline {
@@ -75,7 +76,7 @@
 
 .home__section_intro {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.15rem;
   padding: 0 2rem;
   margin: -2rem auto 2rem auto;
   max-width: 75rem
@@ -287,9 +288,10 @@ a.home__where__image_tesoro {
 .home__why {
   margin-top: 2rem;
   max-width: 40%;
-  font-size: 1.4rem;
   text-align: center;
+  font-weight: 300;
   padding-bottom: 13rem;
+  p {font-size: 1.4rem;}
 }
 
 @media only screen and (min-width: 200px) and (orientation: portrait)  {
@@ -335,7 +337,7 @@ a.home__where__image_tesoro {
 }
 
 .home__join_us__heading { margin: 0; }
-.home__join_us__headline { text-align: center; }
+.home__join_us__headline { text-align: center; font-weight: 300;}
 
 .home__newsletter_form {}
 
@@ -370,6 +372,7 @@ a.home__where__image_tesoro {
   font-size: 1.1rem;
   text-shadow: 1px 1px 5px $darker_brown;
   width: 50%;
+  font-weight: 300;
 }
 
   .home__join_us__apply__copy h4 {

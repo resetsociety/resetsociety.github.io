@@ -489,12 +489,15 @@ input,
 select,
 textarea {
   color: #222;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400; }
 
 html {
   font-size: 1em;
   line-height: 1.4; }
+
+p, li {
+  font-size: 1.05rem; }
 
 @media only screen and (min-width: 2000px) and (orientation: landscape) {
   html {
@@ -562,7 +565,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300; }
 
 h2 {
@@ -673,8 +676,10 @@ a {
 .main_nav__item {
   float: left;
   margin-left: 20px;
-  font-size: 1.1rem;
-  line-height: 2rem; }
+  font-size: 1.2rem;
+  line-height: 2rem;
+  cursor: pointer;
+  font-weight: 300; }
   .main_nav__item.selected {
     border-bottom: 2px solid white; }
 
@@ -690,8 +695,8 @@ a {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../img/fonts/icomoon.eot?uuddon");
-  src: url("../img/fonts/icomoon.eot?#iefixuuddon") format("embedded-opentype"), url("../img/fonts/icomoon.woff?uuddon") format("woff"), url("../img/fonts/icomoon.ttf?uuddon") format("truetype"), url("../img/fonts/icomoon.svg?uuddon#icomoon") format("svg");
+  src: url("../img/fonts/icomoon.eot?oz03fj");
+  src: url("../img/fonts/icomoon.eot?#iefixoz03fj") format("embedded-opentype"), url("../img/fonts/icomoon.woff?oz03fj") format("woff"), url("../img/fonts/icomoon.ttf?oz03fj") format("truetype"), url("../img/fonts/icomoon.svg?oz03fj#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 [class^="icon-"], [class*=" icon-"] {
@@ -705,6 +710,12 @@ a {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.icon-checkmark:before {
+  content: "\e900"; }
+
+.icon-circle:before {
+  content: "\e901"; }
 
 .icon-slack:before {
   content: "\e600"; }
@@ -759,7 +770,8 @@ a {
   padding-right: 35%; }
 
 .home__intro__big_copy {
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  font-weight: 300; }
 
 .home__intro__tagline {
   color: white;
@@ -806,7 +818,7 @@ a {
 
 .home__section_intro {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.15rem;
   padding: 0 2rem;
   margin: -2rem auto 2rem auto;
   max-width: 75rem; }
@@ -1007,9 +1019,11 @@ a.home__where__image_tesoro {
 .home__why {
   margin-top: 2rem;
   max-width: 40%;
-  font-size: 1.4rem;
   text-align: center;
+  font-weight: 300;
   padding-bottom: 13rem; }
+  .home__why p {
+    font-size: 1.4rem; }
 
 @media only screen and (min-width: 200px) and (orientation: portrait) {
   .home__why {
@@ -1043,7 +1057,8 @@ a.home__where__image_tesoro {
   margin: 0; }
 
 .home__join_us__headline {
-  text-align: center; }
+  text-align: center;
+  font-weight: 300; }
 
 .home__newsletter {
   border: 0px;
@@ -1074,7 +1089,8 @@ a.home__where__image_tesoro {
 .home__join_us__apply__copy {
   font-size: 1.1rem;
   text-shadow: 1px 1px 5px #1B1609;
-  width: 50%; }
+  width: 50%;
+  font-weight: 300; }
 
 .home__join_us__apply__copy h4 {
   font-size: 1.6rem;
@@ -1181,3 +1197,87 @@ footer {
   text-align: center;
   padding: 3rem;
   font-size: 2rem; }
+
+.the_plan__intro {
+  text-align: center; }
+
+.the_plan__intro__head,
+.the_plan__intro__explanation {
+  color: white;
+  max-width: 80%;
+  margin: 0 auto;
+  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5); }
+
+.the_plan__intro__head {
+  font-size: 2.8rem; }
+
+.the_plan__intro__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; }
+  .the_plan__intro__items li {
+    width: 27%;
+    margin: 2rem 3%;
+    padding: 1.5rem 1rem;
+    background: white;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    border-radius: 5px; }
+    .the_plan__intro__items li h3 {
+      font-weight: 600;
+      font-size: 1.3rem;
+      margin: 0; }
+    .the_plan__intro__items li p {
+      color: #999;
+      font-size: 0.9rem;
+      margin: 0 0 0.8rem 0;
+      min-height: 3.5rem; }
+    .the_plan__intro__items li .progress_bar {
+      position: relative;
+      width: 100%;
+      height: 0.5rem;
+      border-radius: 0.3rem;
+      background: #ddd; }
+      .the_plan__intro__items li .progress_bar .progress {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        border-radius: 0.3rem;
+        background: #25C89F; }
+
+.the_plan__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; }
+  .the_plan__items .the_plan__item {
+    width: 30%;
+    margin: 2rem 1.5%; }
+    .the_plan__items .the_plan__item h3 {
+      text-align: center;
+      margin: 0; }
+    .the_plan__items .the_plan__item p {
+      font-size: 1rem;
+      margin: 1rem 0; }
+
+.the_plan__items__checklist {
+  list-style: none;
+  margin: 0 0.5rem;
+  padding: 0; }
+  .the_plan__items__checklist li {
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+    position: relative;
+    padding-left: 2rem; }
+    .the_plan__items__checklist li .icon-checkmark, .the_plan__items__checklist li .icon-circle {
+      position: absolute;
+      top: 0;
+      left: 0; }
+    .the_plan__items__checklist li .icon-checkmark {
+      color: #82B556; }
+    .the_plan__items__checklist li .icon-circle {
+      color: #ccc; }

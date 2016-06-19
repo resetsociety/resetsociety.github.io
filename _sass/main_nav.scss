@@ -21,8 +21,10 @@
 .main_nav__item {
   float: left;
   margin-left: 20px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 2rem;
+  cursor: pointer;
+  font-weight: 300;
   &.selected { border-bottom: 2px solid white; }
 }
   .main_nav__logo a,
