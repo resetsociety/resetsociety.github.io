@@ -1281,3 +1281,16 @@ footer {
       color: #82B556; }
     .the_plan__items__checklist li .icon-circle {
       color: #ccc; }
+
+@media only screen and (min-width: 200px) and (orientation: portrait) {
+  .the_plan__intro__items li {
+    width: 100%; }
+
+  .the_plan__items .the_plan__item {
+    width: 100%; } }
+@media only screen and (min-width: 800px) and (orientation: portrait) {
+  .the_plan__intro__items li {
+    width: 44%; }
+
+  .the_plan__items .the_plan__item {
+    width: 47%; } }
