@@ -700,11 +700,29 @@ a {
   display: none; }
 
 @media only screen and (min-width: 200px) and (orientation: portrait) {
+  .main_nav {
+    overflow: visible; }
+
+  .main_nav__menu {
+    position: relative;
+    display: block;
+    margin: 2rem 0;
+    float: right; }
+
   .main_nav__list {
-    display: none; }
+    display: none;
+    margin: 0;
+    padding: 0; }
 
   #hamburger:checked ~ .main_nav__list {
-    display: block; }
+    display: block;
+    position: absolute;
+    top: 2em; }
+    #hamburger:checked ~ .main_nav__list .main_nav__item {
+      float: none;
+      text-align: right;
+      font-size: 20px;
+      line-height: 1.5rem; }
 
   .menuicon {
     -moz-user-select: -moz-none;
@@ -713,14 +731,14 @@ a {
     -ms-user-select: none;
     user-select: none;
     cursor: pointer;
-    display: block;
-    margin: 2rem 0;
-    float: right;
-    font-size: 24px; }
-    .menuicon .icon-facebook {
-      font-size: 30px; } }
+    display: block; }
+    .menuicon .icon-menu {
+      font-size: 34px; }
+    .menuicon .text-menu {
+      font-size: 22px;
+      vertical-align: super; } }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
-  .menuicon {
+  .main_nav__menu {
     margin: 2.4rem 0; } }
 @font-face {
   font-family: 'icomoon';
