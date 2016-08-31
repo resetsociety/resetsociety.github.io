@@ -48,14 +48,13 @@
 }
 
 @media only screen and (min-width: 200px) and (orientation: portrait) {
-  .main_nav {
-    overflow: visible;
-  }
+
   .main_nav__menu {
-    position: relative;
     display: block;
-    margin: 2rem 0;
+    margin: 0;
     float: right;
+    width: 100%;
+    text-align: left;
   }
   .main_nav__list {
     display: none;
@@ -65,13 +64,15 @@
 
   #hamburger:checked ~ .main_nav__list {
     display: block;
-    position: absolute;
-    top: 2em;
+    width: 100%;
     .main_nav__item {
       float: none;
-      text-align: right;
       font-size: 20px;
-      line-height: 1.5rem;
+      line-height: 2rem;
+    }
+    .main_nav__item.selected {
+      border-bottom: none;
+      text-decoration: underline;
     }
   }
   .menuicon {
@@ -92,8 +93,40 @@
   }
 }
 
+@media only screen and (min-width: 400px) and (orientation: portrait) {
+  .main_nav {
+    overflow: visible;
+  }
+  .main_nav__menu {
+    position: relative;
+    display: block;
+    margin: 2rem 0;
+    float: right;
+    width: 125px;
+    text-align: right;
+  }
+  #hamburger:checked ~ .main_nav__list {
+    display: block;
+    position: absolute;
+    top: 2.2em;
+    .main_nav__item {
+      text-align: right;
+    }
+    .main_nav__item.selected {
+      border-bottom: none;
+      text-decoration: underline;
+    }
+  }
+}
+
 @media only screen and (min-width: 600px) and (orientation: portrait) {
   .main_nav__menu {
     margin: 2.4rem 0;
+  }
+  #hamburger:checked ~ .main_nav__list {
+    top: 1.5em;
+    .main_nav__item {
+      line-height: 1.5rem;
+    }
   }
 }

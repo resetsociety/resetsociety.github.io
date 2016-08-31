@@ -700,14 +700,12 @@ a {
   display: none; }
 
 @media only screen and (min-width: 200px) and (orientation: portrait) {
-  .main_nav {
-    overflow: visible; }
-
   .main_nav__menu {
-    position: relative;
     display: block;
-    margin: 2rem 0;
-    float: right; }
+    margin: 0;
+    float: right;
+    width: 100%;
+    text-align: left; }
 
   .main_nav__list {
     display: none;
@@ -716,13 +714,14 @@ a {
 
   #hamburger:checked ~ .main_nav__list {
     display: block;
-    position: absolute;
-    top: 2em; }
+    width: 100%; }
     #hamburger:checked ~ .main_nav__list .main_nav__item {
       float: none;
-      text-align: right;
       font-size: 20px;
-      line-height: 1.5rem; }
+      line-height: 2rem; }
+    #hamburger:checked ~ .main_nav__list .main_nav__item.selected {
+      border-bottom: none;
+      text-decoration: underline; }
 
   .menuicon {
     -moz-user-select: -moz-none;
@@ -737,9 +736,35 @@ a {
     .menuicon .text-menu {
       font-size: 22px;
       vertical-align: super; } }
+@media only screen and (min-width: 400px) and (orientation: portrait) {
+  .main_nav {
+    overflow: visible; }
+
+  .main_nav__menu {
+    position: relative;
+    display: block;
+    margin: 2rem 0;
+    float: right;
+    width: 125px;
+    text-align: right; }
+
+  #hamburger:checked ~ .main_nav__list {
+    display: block;
+    position: absolute;
+    top: 2.2em; }
+    #hamburger:checked ~ .main_nav__list .main_nav__item {
+      text-align: right; }
+    #hamburger:checked ~ .main_nav__list .main_nav__item.selected {
+      border-bottom: none;
+      text-decoration: underline; } }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
   .main_nav__menu {
-    margin: 2.4rem 0; } }
+    margin: 2.4rem 0; }
+
+  #hamburger:checked ~ .main_nav__list {
+    top: 1.5em; }
+    #hamburger:checked ~ .main_nav__list .main_nav__item {
+      line-height: 1.5rem; } }
 @font-face {
   font-family: 'icomoon';
   src: url("../img/fonts/icomoon.eot?oz03fj");
