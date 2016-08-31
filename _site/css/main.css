@@ -755,6 +755,9 @@ a {
 .icon-mail:before {
   content: "\e6da"; }
 
+.icon-menu:before {
+  content: "\e6e0"; }
+
 .icon-typing:before {
   content: "\e733"; }
 
