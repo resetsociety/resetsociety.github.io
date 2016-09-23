@@ -828,6 +828,8 @@ a {
   padding-right: 35%; }
 
 .home__intro__big_copy {
+  color: white;
+  text-shadow: 0 2px 1rem rgba(0, 0, 0, 0.5);
   font-size: 1.2rem;
   font-weight: 300; }
 
