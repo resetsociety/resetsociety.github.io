@@ -657,7 +657,7 @@ a {
   clear: both; }
 
 .main_nav {
-  overflow: hidden;
+  overflow: visible;
   height: 10%;
   min-height: 5rem;
   color: white; }
@@ -689,7 +689,6 @@ a {
   text-decoration: none;
   transition: .3s color; }
 
-.main_nav__logo a:hover,
 .main_nav__item a:hover {
   color: #4DC6E4; }
 
@@ -699,13 +698,14 @@ a {
 .menuicon {
   display: none; }
 
-@media only screen and (min-width: 200px) and (orientation: portrait) {
+@media only screen and (max-width: 900px) {
   .main_nav__menu {
+    position: relative;
     display: block;
-    margin: 0;
+    margin: 2rem 0;
     float: right;
-    width: 100%;
-    text-align: left; }
+    width: 125px;
+    text-align: right; }
 
   .main_nav__list {
     display: none;
@@ -713,15 +713,27 @@ a {
     padding: 0; }
 
   #hamburger:checked ~ .main_nav__list {
+    right: 0;
     display: block;
-    width: 100%; }
+    width: 100%;
+    background: white;
+    padding: 10px;
+    width: 125px;
+    z-index: 100;
+    position: absolute; }
     #hamburger:checked ~ .main_nav__list .main_nav__item {
       float: none;
-      font-size: 20px;
-      line-height: 2rem; }
-    #hamburger:checked ~ .main_nav__list .main_nav__item.selected {
-      border-bottom: none;
-      text-decoration: underline; }
+      font-size: 18px;
+      margin: 0 0 5px 0;
+      text-align: right; }
+      #hamburger:checked ~ .main_nav__list .main_nav__item a {
+        color: black;
+        border-bottom: 2px solid transparent; }
+      #hamburger:checked ~ .main_nav__list .main_nav__item.selected a {
+        border-bottom: 2px solid black; }
+      #hamburger:checked ~ .main_nav__list .main_nav__item a:hover {
+        color: #4DC6E4;
+        border-bottom-color: #4DC6E4; }
 
   .menuicon {
     -moz-user-select: -moz-none;
@@ -736,35 +748,6 @@ a {
     .menuicon .text-menu {
       font-size: 22px;
       vertical-align: super; } }
-@media only screen and (min-width: 400px) and (orientation: portrait) {
-  .main_nav {
-    overflow: visible; }
-
-  .main_nav__menu {
-    position: relative;
-    display: block;
-    margin: 2rem 0;
-    float: right;
-    width: 125px;
-    text-align: right; }
-
-  #hamburger:checked ~ .main_nav__list {
-    display: block;
-    position: absolute;
-    top: 2.2em; }
-    #hamburger:checked ~ .main_nav__list .main_nav__item {
-      text-align: right; }
-    #hamburger:checked ~ .main_nav__list .main_nav__item.selected {
-      border-bottom: none;
-      text-decoration: underline; } }
-@media only screen and (min-width: 600px) and (orientation: portrait) {
-  .main_nav__menu {
-    margin: 2.4rem 0; }
-
-  #hamburger:checked ~ .main_nav__list {
-    top: 1.5em; }
-    #hamburger:checked ~ .main_nav__list .main_nav__item {
-      line-height: 1.5rem; } }
 @font-face {
   font-family: 'icomoon';
   src: url("../img/fonts/icomoon.eot?oz03fj");
