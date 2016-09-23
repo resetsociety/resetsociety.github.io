@@ -693,6 +693,78 @@ a {
 .main_nav__item a:hover {
   color: #4DC6E4; }
 
+#hamburger {
+  display: none; }
+
+.menuicon {
+  display: none; }
+
+@media only screen and (min-width: 200px) and (orientation: portrait) {
+  .main_nav__menu {
+    display: block;
+    margin: 0;
+    float: right;
+    width: 100%;
+    text-align: left; }
+
+  .main_nav__list {
+    display: none;
+    margin: 0;
+    padding: 0; }
+
+  #hamburger:checked ~ .main_nav__list {
+    display: block;
+    width: 100%; }
+    #hamburger:checked ~ .main_nav__list .main_nav__item {
+      float: none;
+      font-size: 20px;
+      line-height: 2rem; }
+    #hamburger:checked ~ .main_nav__list .main_nav__item.selected {
+      border-bottom: none;
+      text-decoration: underline; }
+
+  .menuicon {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    display: block; }
+    .menuicon .icon-menu {
+      font-size: 34px; }
+    .menuicon .text-menu {
+      font-size: 22px;
+      vertical-align: super; } }
+@media only screen and (min-width: 400px) and (orientation: portrait) {
+  .main_nav {
+    overflow: visible; }
+
+  .main_nav__menu {
+    position: relative;
+    display: block;
+    margin: 2rem 0;
+    float: right;
+    width: 125px;
+    text-align: right; }
+
+  #hamburger:checked ~ .main_nav__list {
+    display: block;
+    position: absolute;
+    top: 2.2em; }
+    #hamburger:checked ~ .main_nav__list .main_nav__item {
+      text-align: right; }
+    #hamburger:checked ~ .main_nav__list .main_nav__item.selected {
+      border-bottom: none;
+      text-decoration: underline; } }
+@media only screen and (min-width: 600px) and (orientation: portrait) {
+  .main_nav__menu {
+    margin: 2.4rem 0; }
+
+  #hamburger:checked ~ .main_nav__list {
+    top: 1.5em; }
+    #hamburger:checked ~ .main_nav__list .main_nav__item {
+      line-height: 1.5rem; } }
 @font-face {
   font-family: 'icomoon';
   src: url("../img/fonts/icomoon.eot?oz03fj");
@@ -725,6 +797,9 @@ a {
 
 .icon-mail:before {
   content: "\e6da"; }
+
+.icon-menu:before {
+  content: "\e6e0"; }
 
 .icon-typing:before {
   content: "\e733"; }
