@@ -1276,14 +1276,17 @@ footer {
   padding: 0;
   list-style: none;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: center; }
   .the_plan__intro__items li {
     width: 27%;
     margin: 2rem 3%;
     padding: 1.5rem 1rem;
     background: white;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
-    border-radius: 5px; }
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column; }
     .the_plan__intro__items li h3 {
       font-weight: 600;
       font-size: 1.3rem;
@@ -1292,7 +1295,8 @@ footer {
       color: #999;
       font-size: 0.9rem;
       margin: 0 0 0.8rem 0;
-      min-height: 3.5rem; }
+      min-height: 3.5rem;
+      flex-grow: 2; }
     .the_plan__intro__items li .progress_bar {
       position: relative;
       width: 100%;
@@ -1306,6 +1310,15 @@ footer {
         height: 100%;
         border-radius: 0.3rem;
         background: #25C89F; }
+    .the_plan__intro__items li .button {
+      background: #25C89F;
+      color: white;
+      border-radius: 5px;
+      padding: 0.3rem 0.7rem;
+      width: 100%;
+      display: block;
+      text-decoration: none;
+      text-align: center; }
 
 .the_plan__items {
   margin: 0;
