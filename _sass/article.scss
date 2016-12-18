@@ -8,6 +8,19 @@
   }
 }
 
+.article__requirements {
+  column-count: 2;
+}
+
+.article__requirements__with_details {
+  margin: 1rem 0;
+  p { margin: 0 }
+}
+
+.article__requirements__details {
+  color: #999;
+}
+
 .article__apply {
   text-align: center;
   padding: 3rem;
