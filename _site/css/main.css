@@ -1284,6 +1284,9 @@ footer {
 .container--padded {
   padding: 2.5rem; }
 
+.article__wrapper {
+  display: flex; }
+
 .article h2 {
   text-align: left; }
 
@@ -1292,6 +1295,34 @@ footer {
   padding: 3rem;
   font-size: 2rem; }
 
+.article__sidebar {
+  width: 40rem;
+  background: #258dc8;
+  padding: 3rem; }
+  .article__sidebar h3 {
+    font-weight: 300;
+    color: white;
+    text-shadow: 0 2px 1rem rgba(0, 0, 0, 0.5);
+    margin: 2rem 0 0.5rem 0; }
+
+.article__sidebar__section {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px; }
+  .article__sidebar__section h4 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 0; }
+  .article__sidebar__section ul {
+    list-style: none;
+    padding: 0; }
+
+@media only screen and (max-width: 1000px) {
+  .article__wrapper {
+    flex-wrap: wrap; }
+
+  .article__sidebar {
+    width: 100%; } }
 .the_plan__intro {
   text-align: center; }
 

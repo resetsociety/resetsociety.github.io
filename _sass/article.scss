@@ -1,3 +1,7 @@
+.article__wrapper {
+  display: flex;
+}
+
 .article {
   h2 {
     text-align: left;
@@ -8,4 +12,42 @@
   text-align: center;
   padding: 3rem;
   font-size: 2rem;
+}
+
+
+.article__sidebar {
+  width: 40rem;
+  background: #258dc8; //sky
+  padding: 3rem;
+
+  h3 {
+    font-weight: 300;
+    color: white;
+    text-shadow: 0 2px 1rem $shadow_black;
+    margin: 2rem 0 0.5rem 0;
+  }
+}
+
+.article__sidebar__section {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+
+  h4 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .article__wrapper { flex-wrap: wrap; }
+  .article__sidebar {
+    width: 100%;
+  }
 }
